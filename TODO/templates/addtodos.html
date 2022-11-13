@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Add Todos{% endblock title %}
+{% block body %}
+{% load crispy_forms_tags %}
+<div class="conainer">
+    <h3 class="container">Add Todos</h3>
+    <div class="container">
+        <form method="POST" action="/addtodos">
+            {% csrf_token %}
+            {{form|crispy}}
+            <button class="btn btn-primary my-1" type="submit" name="Add Todos">Save</button>
+        </form>
+    </div>
+</div>
+{% endblock body %}

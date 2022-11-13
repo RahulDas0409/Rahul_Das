@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Delete Todos{% endblock title %}
+{% block body %}
+<div class="conainer">
+    <h3>Delete Todos</h3>
+    <div class="container">
+        <p>Are you sure you want to delet {{item}}?</p>
+        <a href="{%url 'Home'%}"><button class="btn btn-primary" type="submit" name="Confirm">Cancel</button></a>
+        <form method="POST" action="">
+            {% csrf_token %}
+            <button class="btn btn-primary" type="submit" name="Confirm">Confirm</button>
+        </form>
+    </div>
+</div>
+{% endblock body %}
