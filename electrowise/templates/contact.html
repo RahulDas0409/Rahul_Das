@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Contact Us
+{% endblock title %}
+
+{% block contactactive %}
+active
+{% endblock contactactive %}
+
+{% block body %}
+<div class="container my-4">
+    <div class="text-center">
+        <h2>Contact Us</h2>
+    </div>
+    <form method="post" action="/contact">
+        {% csrf_token %}
+        <div class="mb-3">
+            <p class="form-label">{{ form.name.label_tag }}</p>
+            <p class="form-label" name="name">{{ form.name }}</p>
+        </div>
+        <div class="mb-3">
+            <p class="form-label">{{ form.email.label_tag }}</p>
+            <p class="form-label" name="email">{{ form.email }}</p>
+        </div>
+        <div class="mb-3">
+            <p class="form-label">{{ form.contact.label_tag }}</p>
+            <p class="form-label" name="contact">{{ form.contact }}</p>
+        </div>
+        <div class="mb-3">
+            <p class="form-label">{{ form.sms.label_tag }}</p>
+            <p class="form-label" rows="3" name="sms">{{ form.sms }}</p>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
+{% endblock body %}

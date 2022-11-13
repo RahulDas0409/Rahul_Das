@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block homeactive %}
+active
+{% endblock homeactive %}
+
+{% block body %}
+<div class='container-fluid px-4 shadow p-3 mb-5 bg-body rounded'>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="/static/eJeevanPratik.png" class="d-block w-100" alt="E-Jeevan Prateek" height="460px">
+          <div class="carousel-caption d-none d-md-block">
+              <h5 style="color:gold">E-Jeevan Pratik</h5>
+              <p style="color:gold">Protecting Lifes is our main target</p>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img src="/static/medicalTeam.jpg" class="d-block w-100" alt="medical team" height="460px">
+          <div class="carousel-caption d-none d-md-block">
+              <h5 style="color:gold">Medical Team</h5>
+              <p style="color:gold">A medical to is always ready to dispatch for emergency</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/static/webapp.png" class="d-block w-100" alt="Majhergram Fields" height="460px">
+          <div class="carousel-caption d-none d-md-block">
+              <h5 style="color:gold">WebSite and Mobile Application</h5>
+              <p style="color:gold">Always seek help through the website and mobile application</p>
+          </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+</div>
+<div class="container py-4 shadow p-3 mb-5 bg-body rounded">
+  <h2>E-Jeevan Prateek</h2>
+  <p>Healthcare sector is a dynamic sector and needs constant innovation and improvement. India has always been a host is serving world class health services. Our product is another step to achieve new milestone. We are providing  affordable remote health monitoring system. With the help of our remote monitoring system Many health problems like chronic heart problems, asthma, high, diabetes, high blood pressure which needs constant monitoring, can be monitored easily. Also the working class or the younger generation can take care of the older generation.
+  </p>
+</div>
+<div class='container'>
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+            <img src="/static/IOT.jpg" class="card-img-top" alt="IoT" height="260px">
+            <div class="card-body">
+              <h5 class="card-title">IoT Architexture</h5>
+              <p class="card-text">Our remote monitoring system is based on IoT architecture.</p>
+              <a href="#" class="btn btn-primary">Read more...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+            <img src="./static/cloud.jpg" class="card-img-top" alt="Cloud System" height="238px">
+            <div class="card-body">
+              <h5 class="card-title">Cloud Service</h5>
+              <p class="card-text">With cloud servers our system can monitor patient who are at work or home.</p>
+              <a href="#" class="btn btn-primary">Read more...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+            <img src="/static/consultDoctor.jpg" class="card-img-top" alt="Doctor Support" height="260px">
+            <div class="card-body">
+              <h5 class="card-title">24/7 Doctor</h5>
+              <p class="card-text">with this device one can consult a doctor any time.</p>
+              <a href="#" class="btn btn-primary">Read more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}
